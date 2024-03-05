@@ -41,7 +41,6 @@
 */
 a {
   text-decoration: none;
-  color: var(--color__orange);
   font-weight: var(--font-weight__light);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -51,7 +50,7 @@ a {
 }
 @media (hover: hover) {
   a:hover {
-    color: var(--color__gray);
+    color: var(--color__blue-light);
   }
 }
 
