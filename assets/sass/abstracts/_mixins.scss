@@ -1,0 +1,26 @@
+/*
+    Mixins
+
+-------------------------------------
+*/
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin transition($attribute: all, $time: 0.3s, $easing: ease-in-out) {
+  -webkit-transition: $attribute $time $easing;
+  -moz-transition: $attribute $time $easing;
+  -ms-transition: $attribute $time $easing;
+  -o-transition: $attribute $time $easing;
+  transition: $attribute $time $easing;
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/root" as *;
+
+/*
+    Books Title
+
+-------------------------------------
+*/
+
+.books-title {
+  margin-top: var(--title__margin-top);
+
+  .book-title__content {
+    @include flex-center();
+
+    .book-title__header {
+      font-family: var(--font-style__secondary);
+      color: var(--color__orange);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/root" as *;
+
+/*
+    Single Book
+
+-------------------------------------
+*/
+
+.single-book {
+
+  .book-container {
+
+    .single-book__items {
+      @include flex-center-column();
+      text-align: center;
+      margin-top: var(--content__margin-top);
+
+      .single-book__item {
+        margin-bottom: 2rem;
+
+        span {
+          font-weight: var(--font-weight__light);
+          color: var(--color__gray);
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

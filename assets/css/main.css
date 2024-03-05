@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto+Condensed:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+/*
+    Mixins
+
+-------------------------------------
+*/
+/*
+    Root Variables
+
+-------------------------------------
+*/
+:root {
+  --content__max-width-s: 1200px;
+  --content__padding: 0 2rem;
+  --content__margin-top: 5rem;
+  --font-style__primary: "Roboto Condensed", sans-serif;
+  --font-style__secondary: "Saira Stencil One", sans-serif;
+  --font-size__text: 1.375rem;
+  --font-size__header-l: 2.5rem;
+  --font-size__header-m: 1.775rem;
+  --font-weight__light: 400;
+  --font-weight__regular: 400;
+  --font-weight__bold: 700;
+  --color__gray: #ABB2B2;
+  --color__orange: #D19A5E;
+  --title__margin-top: 10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size__text: 1.175rem;
+    --font-size__header-l: 2rem;
+    --font-size__header-m: 1.5rem;
+  }
+}
+/*
+    Normalize
+
+-------------------------------------
+*/
+a {
+  text-decoration: none;
+  color: var(--color__orange);
+  font-weight: var(--font-weight__light);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (hover: hover) {
+  a:hover {
+    color: var(--color__gray);
+  }
+}
+
+/*
+    Archive Book
+
+-------------------------------------
+*/
+.archive-book .book-container .archive-book__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.archive-book .book-container .archive-book__content .page-header .page-title {
+  font-family: var(--font-style__secondary);
+  color: var(--color__orange);
+}
+.archive-book .book-container .archive-book__content .archive-posts {
+  margin-top: var(--content__margin-top);
+}
+.archive-book .book-container .archive-book__content .archive-posts article:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+/*
+    Single Book
+
+-------------------------------------
+*/
+.single-book .book-container .single-book__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: var(--content__margin-top);
+}
+.single-book .book-container .single-book__items .single-book__item {
+  margin-bottom: 2rem;
+}
+.single-book .book-container .single-book__items .single-book__item span {
+  font-weight: var(--font-weight__light);
+  color: var(--color__gray);
+  margin-right: 1rem;
+}
+
+/*
+    Content Box
+
+-------------------------------------
+*/
+.book-container {
+  max-width: var(--content__max-width-s);
+  margin: 0 auto;
+  padding: var(--content__padding);
+  height: 100%;
+}
+
+.content-box .text {
+  font-size: var(--font-size__text);
+  line-height: calc(var(--font-size__text) * 1.3);
+}
+.content-box .header-m {
+  font-size: var(--font-size__header-m);
+  line-height: calc(var(--font-size__header-m) * 1);
+}
+.content-box .header-l {
+  font-size: var(--font-size__header-l);
+  line-height: calc(var(--font-size__header-l) * 1);
+}
+
+/*
+    Books Title
+
+-------------------------------------
+*/
+.books-title {
+  margin-top: var(--title__margin-top);
+}
+.books-title .book-title__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.books-title .book-title__content .book-title__header {
+  font-family: var(--font-style__secondary);
+  color: var(--color__orange);
+}
+
+/*# sourceMappingURL=main.css.map */

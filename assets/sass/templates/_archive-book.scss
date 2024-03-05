@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/root" as *;
+
+/*
+    Archive Book
+
+-------------------------------------
+*/
+
+.archive-book {
+
+  .book-container {
+
+    .archive-book__content {
+      @include flex-center-column();
+      text-align: center;
+
+      .page-header {
+
+        .page-title {
+          font-family: var(--font-style__secondary);
+          color: var(--color__orange);
+        }
+      }
+      .archive-posts {
+        margin-top: var(--content__margin-top);
+
+        article:not(:first-of-type) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
